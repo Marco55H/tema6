@@ -2,9 +2,9 @@ package ej4;
 
 public class Array {
 
-	Electrodomestico[] electrodomesticos = new Electrodomestico[10];
+	static Electrodomestico[] electrodomesticos = new Electrodomestico[10];
 
-	private void añadirObjeto(Electrodomestico electro) {
+	public static void añadirObjeto(Electrodomestico electro) {
 		int i = 0;
 		boolean nulo = false;
 		while (i < electrodomesticos.length && nulo == false) {
@@ -18,7 +18,7 @@ public class Array {
 
 	}
 
-	private int calculaPrecio(Electrodomestico electro) {
+	private static int calculaPrecio(Electrodomestico electro) {
 		int i = 0;
 		int precioTotal=0;
 		boolean nulo = false;
@@ -38,7 +38,7 @@ public class Array {
 		return precioTotal;
 	}
 	
-	private void precioClases(Electrodomestico electro) {
+	private static void precioClases(Electrodomestico electro) {
 		int i = 0;
 		int precioLavadora=0;
 		int precioTele=0;
