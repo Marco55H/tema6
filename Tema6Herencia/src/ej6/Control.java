@@ -1,5 +1,7 @@
 package ej6;
 
+import java.util.Arrays;
+
 public class Control {
 
 	public static void main(String[] args) {
@@ -15,6 +17,8 @@ public class Control {
 	Sociedad.añadir(P4);
 	Socio P5 = new Socio(22, "Carlos", 22);
 	Sociedad.añadir(P5);
+	
+	Arrays.sort(Sociedad.array);
 	
 	Sociedad.imprimirArray();
 }

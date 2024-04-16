@@ -51,9 +51,9 @@ public class Socio implements Comparable<Socio> {
 
 	public int compareTo(Socio p){
 		int res = 0;
-			if(this.edad < p.edad){
+			if(this.id < p.id){
 				res = -1;
-		} else if(this.edad>p.edad){
+		} else if(this.id>p.id){
 			res = 1;
 		}
 		return res;
